@@ -1572,13 +1572,6 @@ system/system/media/sticker/frame_15/birthday/top/top_000.png
 system/system/media/sticker/frame_15/icon.png
 system/system/media/sticker/frame_15/setting.txt
 
-# blobs HW
-system_ext/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so
-system_ext/lib64/vendor.mediatek.hardware.pq@2.0.so;MODULE_SUFFIX=-system_ext
-system_ext/lib64/vendor.mediatek.hardware.pq@2.1.so;MODULE_SUFFIX=-system_ext
-system_ext/lib64/vendor.mediatek.hardware.pq@2.2.so;MODULE_SUFFIX=-system_ext
-system_ext/lib64/vendor.mediatek.hardware.pq@2.3.so;MODULE_SUFFIX=-system_ext
-
 # Rendering Camera
 system_ext/lib64/libJpegOal.so
 system_ext/lib64/libMiraVision_jni.so
@@ -1586,8 +1579,7 @@ system_ext/lib64/libPQDCjni.so
 system_ext/lib64/libPQjni.so
 system_ext/lib64/libaed.so
 system_ext/lib64/libccci_util_sys.so
-system_ext/lib64/libcmdl_ndk.mtk.so
-system_ext/lib64/libcomposer_ext.so
+system_ext/lib64/libcomposer_ext.so;MODULE_SUFFIX=-system_ext
 system_ext/lib64/libcompress.so
 system_ext/lib64/libcomutils.so
 system_ext/lib64/libcustom_jni.so
@@ -1603,41 +1595,8 @@ system_ext/lib64/libloadfilter.so
 system_ext/lib64/libmtk_vt_service.so
 system_ext/lib64/libmtk_vt_wrapper.so
 
-# MVPU
-system_ext/lib64/libmvpu_cic_ci_compiler.mtk.so
-system_ext/lib64/libmvpu_cic_ci_compiler_25.mtk.so
-system_ext/lib64/libmvpu_clc_14_mvpu_debuginfo_25.mtk.so
-system_ext/lib64/libmvpu_clc_14_mvpu_elf_25.mtk.so
-system_ext/lib64/libmvpu_clc_14_mvpu_utility_25.mtk.so
-system_ext/lib64/libmvpu_clc_mvpu_debuginfo.mtk.so
-system_ext/lib64/libmvpu_clc_mvpu_elf.mtk.so
-system_ext/lib64/libmvpu_clc_mvpu_utility.mtk.so
-system_ext/lib64/libmvpu_config.mtk.so
-system_ext/lib64/libmvpu_engine.mtk.so
-system_ext/lib64/libmvpu_engine_25.mtk.so
-system_ext/lib64/libmvpu_engine_25_pub.mtk.so
-system_ext/lib64/libmvpu_engine_pub.mtk.so
-system_ext/lib64/libmvpu_pattern.mtk.so
-system_ext/lib64/libmvpu_pattern_25.mtk.so
-system_ext/lib64/libmvpu_pattern_25_pub.mtk.so
-system_ext/lib64/libmvpu_pattern_pub.mtk.so
-system_ext/lib64/libmvpu_runtime.mtk.so
-system_ext/lib64/libmvpu_runtime_25.mtk.so
-system_ext/lib64/libmvpu_runtime_25_pub.mtk.so
-system_ext/lib64/libmvpu_runtime_builtin.mtk.so
-system_ext/lib64/libmvpu_runtime_builtin_25.mtk.so
-system_ext/lib64/libmvpu_runtime_pub.mtk.so
-system_ext/lib64/libmvpuop25_mtk_cv.mtk.so
-system_ext/lib64/libmvpuop25_mtk_nn.mtk.so
-system_ext/lib64/libmvpuop_mtk_cv.mtk.so
-system_ext/lib64/libmvpuop_mtk_nn.mtk.so
-
-
-system_ext/lib64/libneuron_graph_delegate.mtk.so
-system_ext/lib64/libneuronusdk_adapter.mtk.so
 system_ext/lib64/libneuropilot_hal_utils.so
 system_ext/lib64/libnir_neon_driver_ndk.mtk.so
-system_ext/lib64/libpowerhalwrap.so
 system_ext/lib64/libprifmjni.so
 system_ext/lib64/libshowlogo.so
 system_ext/lib64/libsignal.so
@@ -1645,7 +1604,7 @@ system_ext/lib64/libteeservice_client.trustonic.so
 system_ext/lib64/libthroughputmode.so
 system_ext/lib64/libtouch_ll.so
 system_ext/lib64/libtouch_ll_share.so
-system_ext/lib64/libudf.so
+system_ext/lib64/libudf.so;MODULE_SUFFIX=-system_ext
 system_ext/lib64/libui_ext.so
 system_ext/lib64/libvsync_hint.so
 system_ext/lib64/libvt_avsync.so
@@ -1657,20 +1616,15 @@ system_ext/lib64/vendor.mediatek.hardware.aee@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.aee@1.1.so
 
 # Apuware
-system_ext/lib64/vendor.mediatek.hardware.apuware.apusys-V3-ndk.so
-system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.apusys-V3-ndk.so;MODULE_SUFFIX=-system_ext
+system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@1.0.so;MODULE_SUFFIX=-system_ext
 system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@2.0.so;MODULE_SUFFIX=-system_ext
 system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so;MODULE_SUFFIX=-system_ext
 system_ext/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so;MODULE_SUFFIX=-system_ext
-system_ext/lib64/vendor.mediatek.hardware.apuware.utils-V1-ndk.so
-system_ext/lib64/vendor.mediatek.hardware.apuware.utils@1.0.so
-system_ext/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so;MODULE_SUFFIX=-system_ext
-system_ext/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so
-system_ext/lib64/vendor.mediatek.hardware.apuware.xrp@2.0.so
 
 # Lib PQ
-system_ext/lib64/vendor.mediatek.hardware.pq@2.0.so
-system_ext/lib64/vendor.mediatek.hardware.pq@2.1.so
+system_ext/lib64/vendor.mediatek.hardware.pq@2.0.so;MODULE_SUFFIX=-system_ext
+system_ext/lib64/vendor.mediatek.hardware.pq@2.1.so;MODULE_SUFFIX=-system_ext
 system_ext/lib64/vendor.mediatek.hardware.pq@2.2.so
 system_ext/lib64/vendor.mediatek.hardware.pq@2.3.so
 system_ext/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so
@@ -1680,4 +1634,4 @@ system_ext/lib64/vendor.mediatek.hardware.touchll@1.0.so
 
 # Videotelephony
 system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=-system_ext

@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Soong Namespace
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Priv-app permission
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-pricamera.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-pricamera.xml
@@ -37,19 +41,13 @@ PRODUCT_PACKAGES += \
     libjni_uvpanorama \
     libtensorflowlite-system_ext \
     libtensorflowlite24 \
-    vendor.mediatek.hardware.pq_aidl-V2-ndk \
-    vendor.mediatek.hardware.pq@2.0-system_ext \
-    vendor.mediatek.hardware.pq@2.1-system_ext \
-    vendor.mediatek.hardware.pq@2.2-system_ext \
-    vendor.mediatek.hardware.pq@2.3-system_ext \
     libJpegOal \
     libMiraVision_jni \
     libPQDCjni \
     libPQjni \
     libaed \
     libccci_util_sys \
-    libcmdl_ndk.mtk \
-    libcomposer_ext \
+    libcomposer_ext-system_ext \
     libcompress \
     libcomutils \
     libcustom_jni \
@@ -64,38 +62,8 @@ PRODUCT_PACKAGES += \
     libloadfilter \
     libmtk_vt_service \
     libmtk_vt_wrapper \
-    libmvpu_cic_ci_compiler.mtk \
-    libmvpu_cic_ci_compiler_25.mtk \
-    libmvpu_clc_14_mvpu_debuginfo_25.mtk \
-    libmvpu_clc_14_mvpu_elf_25.mtk \
-    libmvpu_clc_14_mvpu_utility_25.mtk \
-    libmvpu_clc_mvpu_debuginfo.mtk \
-    libmvpu_clc_mvpu_elf.mtk \
-    libmvpu_clc_mvpu_utility.mtk \
-    libmvpu_config.mtk \
-    libmvpu_engine.mtk \
-    libmvpu_engine_25.mtk \
-    libmvpu_engine_25_pub.mtk \
-    libmvpu_engine_pub.mtk \
-    libmvpu_pattern.mtk \
-    libmvpu_pattern_25.mtk \
-    libmvpu_pattern_25_pub.mtk \
-    libmvpu_pattern_pub.mtk \
-    libmvpu_runtime.mtk \
-    libmvpu_runtime_25.mtk \
-    libmvpu_runtime_25_pub.mtk \
-    libmvpu_runtime_builtin.mtk \
-    libmvpu_runtime_builtin_25.mtk \
-    libmvpu_runtime_pub.mtk \
-    libmvpuop25_mtk_cv.mtk \
-    libmvpuop25_mtk_nn.mtk \
-    libmvpuop_mtk_cv.mtk \
-    libmvpuop_mtk_nn.mtk \
-    libneuron_graph_delegate.mtk \
-    libneuronusdk_adapter.mtk \
     libneuropilot_hal_utils \
-    libnir_neon_driver_ndk.mtk \
-    libpowerhalwrap \
+    libpowerhalwrap-system_ext \
     libprifmjni \
     libshowlogo \
     libsignal \
@@ -103,7 +71,7 @@ PRODUCT_PACKAGES += \
     libthroughputmode \
     libtouch_ll \
     libtouch_ll_share \
-    libudf \
+    libudf-system_ext \
     libui_ext \
     libvsync_hint \
     libvt_avsync \
@@ -111,25 +79,26 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.aee-V1-ndk \
     vendor.mediatek.hardware.aee@1.0 \
     vendor.mediatek.hardware.aee@1.1 \
-    vendor.mediatek.hardware.apuware.apusys-V3-ndk \
-    vendor.mediatek.hardware.apuware.apusys@1.0 \
+    vendor.mediatek.hardware.apuware.apusys-V3-ndk-system_ext \
+    vendor.mediatek.hardware.apuware.apusys@1.0-system_ext \
     vendor.mediatek.hardware.apuware.apusys@2.0-system_ext \
     vendor.mediatek.hardware.apuware.apusys@2.1-system_ext \
     vendor.mediatek.hardware.apuware.hmp@1.0-system_ext \
-    vendor.mediatek.hardware.apuware.utils-V1-ndk \
-    vendor.mediatek.hardware.apuware.utils@1.0 \
-    vendor.mediatek.hardware.apuware.utils@2.0-system_ext \
-    vendor.mediatek.hardware.apuware.xrp@1.0 \
-    vendor.mediatek.hardware.apuware.xrp@2.0 \
-    vendor.mediatek.hardware.pq@2.0 \
-    vendor.mediatek.hardware.pq@2.1 \
+    vendor.mediatek.hardware.pq@2.0-system_ext \
+    vendor.mediatek.hardware.pq@2.1-system_ext \
     vendor.mediatek.hardware.pq@2.2 \
     vendor.mediatek.hardware.pq@2.3 \
     vendor.mediatek.hardware.pq_aidl-V2-ndk \
     vendor.mediatek.hardware.touchll@1.0 \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
-    vendor.mediatek.hardware.videotelephony@1.0
+    vendor.mediatek.hardware.videotelephony@1.0-system_ext
+
 # Sticker files
+LOCAL_STICKER_SRC := vendor/prize/camera/proprietary/media/sticker
+
+PRODUCT_COPY_FILES += \
+    $(foreach f,$(shell find $(LOCAL_STICKER_SRC) -type f),$(f):system/media/sticker/$(patsubst $(LOCAL_STICKER_SRC)/%,%,$(f)))
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/media/sticker/frame_07/icon.png:system/media/sticker/frame_07/icon.png \
     $(LOCAL_PATH)/proprietary/media/sticker/frame_07/setting.txt:system/media/sticker/frame_07/setting.txt \
