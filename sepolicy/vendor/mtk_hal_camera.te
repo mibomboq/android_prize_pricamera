@@ -1,3 +1,2 @@
 get_prop(mtk_hal_camera, system_odm_camera_prop)
 set_prop(mtk_hal_camera, system_odm_camera_prop)
-
