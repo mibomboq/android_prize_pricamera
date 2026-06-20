@@ -5,7 +5,7 @@
 #
 
 # Inherit from the proprietary version
-include vendor/advan/X1/X1-vendor.mk
+include device/advan/X1/BoardConfig.mk
 
 PRIZE_PATH := device/prize/camera
 
