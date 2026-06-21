@@ -4,6 +4,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+PRIZE_PATH := device/prize/camera
+
+# Soong Namespace
+PRODUCT_SOONG_NAMESPACES += \
+    $(PRIZE_PATH)
+
 # Inherit from the proprietary version
 $(call inherit-product, vendor/advan/X1/X1-vendor.mk)
 
@@ -13,8 +19,8 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Priv-app permission
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/privapp-permissions-pricamera.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-pricamera.xml
+    $(PRIZE_PATH)/configs/privapp-permissions-pricamera.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-pricamera.xml
 
 # Sysconfig
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/pricamera-hiddenapi-package-allowlist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/pricamera-hiddenapi-package-allowlist.xml
+    $(PRIZE_PATH)/configs/pricamera-hiddenapi-package-allowlist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/pricamera-hiddenapi-package-allowlist.xml
