@@ -1,5 +1,1 @@
-get_prop(priv_app, system_odm_camera_prop)
 get_prop(priv_app, vendor_persist_camera_prop)
-allow priv_app unlabeled:filesystem getattr;
-
-allow priv_app system_ext_file:file r_file_perms;
