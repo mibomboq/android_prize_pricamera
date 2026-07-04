@@ -11,7 +11,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(PRIZE_PATH)
 
 # Inherit from the proprietary version
-$(call inherit-product, vendor/advan/X1/X1-vendor.mk)
+$(call inherit-product, vendor/prize/camera/camera-vendor.mk)
 
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \

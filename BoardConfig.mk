@@ -8,9 +8,6 @@
 
 PRIZE_PATH := device/prize/camera
 
-# Build Hacks
-BUILD_BROKEN_DUP_SYSPROP := true
-
 # Properties
 TARGET_SYSTEM_EXT_PROP += $(PRIZE_PATH)/system_ext.prop
 

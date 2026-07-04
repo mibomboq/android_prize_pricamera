@@ -1,12 +1,11 @@
 # ADVAN_X1-user 14 UP1A.231005.007 1751478751 release-keys
 
 # Pricam
-system_ext/app/PriCamera/PriCamera.apk|system_ext/priv-app/PriCamera/PriCamera.apk;OVERRIDES=Aperture
-
+system_ext/app/PriCamera/PriCamera.apk;OVERRIDES=Aperture|system_ext/priv-app/PriCamera/PriCamera.apk
 # Libs Camera
 system_ext/lib64/libBSTBeautyAPK.so
 system_ext/lib64/libBSTFaceDetction.so
-system_ext/lib64/libBSTSingleAIBokeh.so;MODULE_SUFFIX=-system_ext
+system_ext/lib64/libBSTSingleAIBokeh.so;MODULE_SUFFIX=_system_ext
 system_ext/lib64/libBSTSingleAIDoc.so
 system_ext/lib64/libBstStick2D.so
 system_ext/lib64/libc++_shared.so
@@ -17,15 +16,15 @@ system_ext/lib64/libjni_bstfilter.so
 system_ext/lib64/libopencv_java4.so
 system_ext/lib64/libjni_bstportrait.so
 system_ext/lib64/libjni_uvpanorama.so
-system_ext/lib64/libtensorflowlite.so;MODULE_SUFFIX=-system_ext
+system_ext/lib64/libtensorflowlite.so;MODULE_SUFFIX=_system_ext
 system_ext/lib64/libtensorflowlite24.so
-
+# Fix 64mp
+vendor/lib64/mt6789/libaibc_tuning.so
 # Config
 system_ext/etc/bst_stick.cfg
 system_ext/etc/bstai_aidoc
 system_ext/etc/bstaicorner_aidoc
 system_ext/etc/singleaidoc.cfg
-
 # Sricker
 system/media/sticker/expressionsticker_01_cat/cat/cat.txt
 system/media/sticker/expressionsticker_01_cat/cat/ear/ear_000.png
@@ -1571,67 +1570,26 @@ system/media/sticker/frame_15/birthday/bottom/bottom_000.png
 system/media/sticker/frame_15/birthday/top/top_000.png
 system/media/sticker/frame_15/icon.png
 system/media/sticker/frame_15/setting.txt
-
 # Rendering Camera
 system_ext/lib64/libJpegOal.so
 system_ext/lib64/libMiraVision_jni.so
 system_ext/lib64/libPQDCjni.so
 system_ext/lib64/libPQjni.so
-system_ext/lib64/libaed.so
-system_ext/lib64/libccci_util_sys.so
-system_ext/lib64/libcomposer_ext.so;MODULE_SUFFIX=-system_ext
-system_ext/lib64/libcompress.so
-system_ext/lib64/libcomutils.so
 system_ext/lib64/libcustom_jni.so
 system_ext/lib64/libcustom_prop.so
 system_ext/lib64/libdisp_dejitter.so
-system_ext/lib64/libgralloc_extra_sys.so
-system_ext/lib64/libimsma.so
-system_ext/lib64/libimsma_adapt.so
 system_ext/lib64/libjni_pq.so
 system_ext/lib64/libjpeg-alpha-oal.so
 system_ext/lib64/libjpeg-alpha.so
 system_ext/lib64/libloadfilter.so
 system_ext/lib64/libmtk_vt_service.so
 system_ext/lib64/libmtk_vt_wrapper.so
-
-system_ext/lib64/libneuropilot_hal_utils.so
-system_ext/lib64/libnir_neon_driver_ndk.mtk.so
-system_ext/lib64/libprifmjni.so
-system_ext/lib64/libshowlogo.so
-system_ext/lib64/libsignal.so
-system_ext/lib64/libteeservice_client.trustonic.so
-system_ext/lib64/libthroughputmode.so
-system_ext/lib64/libtouch_ll.so
-system_ext/lib64/libtouch_ll_share.so
-system_ext/lib64/libudf.so;MODULE_SUFFIX=-system_ext
-system_ext/lib64/libui_ext.so
-system_ext/lib64/libvsync_hint.so
-system_ext/lib64/libvt_avsync.so
-
-# AAE
-system_ext/lib64/vendor.mediatek.framework.mtksf_ext-V3-ndk.so
-system_ext/lib64/vendor.mediatek.hardware.aee-V1-ndk.so
-system_ext/lib64/vendor.mediatek.hardware.aee@1.0.so
-system_ext/lib64/vendor.mediatek.hardware.aee@1.1.so
-
-# Apuware
-system_ext/lib64/vendor.mediatek.hardware.apuware.apusys-V3-ndk.so;MODULE_SUFFIX=-system_ext
-system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@1.0.so;MODULE_SUFFIX=-system_ext
-system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@2.0.so;MODULE_SUFFIX=-system_ext
-system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so;MODULE_SUFFIX=-system_ext
-system_ext/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so;MODULE_SUFFIX=-system_ext
-
 # Lib PQ
-system_ext/lib64/vendor.mediatek.hardware.pq@2.0.so;MODULE_SUFFIX=-system_ext
-system_ext/lib64/vendor.mediatek.hardware.pq@2.1.so;MODULE_SUFFIX=-system_ext
+system_ext/lib64/vendor.mediatek.hardware.pq@2.0.so;MODULE_SUFFIX=_system_ext
+system_ext/lib64/vendor.mediatek.hardware.pq@2.1.so;MODULE_SUFFIX=_system_ext
 system_ext/lib64/vendor.mediatek.hardware.pq@2.2.so
 system_ext/lib64/vendor.mediatek.hardware.pq@2.3.so
 system_ext/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so
-
-# Touchll
-system_ext/lib64/vendor.mediatek.hardware.touchll@1.0.so
-
 # Videotelephony
 system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=-system_ext
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=_system_ext
