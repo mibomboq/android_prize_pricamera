@@ -2,6 +2,7 @@
 
 # Pricam
 system_ext/app/PriCamera/PriCamera.apk;OVERRIDES=Aperture|system_ext/priv-app/PriCamera/PriCamera.apk
+
 # Libs Camera
 system_ext/lib64/libBSTBeautyAPK.so
 system_ext/lib64/libBSTFaceDetction.so
@@ -18,13 +19,24 @@ system_ext/lib64/libjni_bstportrait.so
 system_ext/lib64/libjni_uvpanorama.so
 system_ext/lib64/libtensorflowlite.so;MODULE_SUFFIX=_system_ext
 system_ext/lib64/libtensorflowlite24.so
+
 # Fix 64mp
 vendor/lib64/mt6789/libaibc_tuning.so
+
 # Config
 system_ext/etc/bst_stick.cfg
 system_ext/etc/bstai_aidoc
 system_ext/etc/bstaicorner_aidoc
 system_ext/etc/singleaidoc.cfg
+vendor/etc/hdr.cfg
+vendor/etc/user_front.cfg
+vendor/etc/user_main.cfg
+vendor/etc/user_wide.cfg
+
+# Sensor
+vendor/lib64/s5k2lqsx_mipi_raw_IdxMgr.so
+vendor/lib64/s5k4h7_mipi_raw_IdxMgr.so
+
 # Sricker
 system/media/sticker/expressionsticker_01_cat/cat/cat.txt
 system/media/sticker/expressionsticker_01_cat/cat/ear/ear_000.png
