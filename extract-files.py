@@ -21,11 +21,11 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/prize/camera',
+    'vendor/prize/camera',
 ]
 
 def lib_fixup_system_ext_suffix(lib: str, partition: str, *args, **kwargs):
     return f'{lib}_{partition}' if partition == 'system_ext' else None
-
 
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
