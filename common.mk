@@ -10,9 +10,6 @@ PRIZE_PATH := device/prize/camera
 PRODUCT_SOONG_NAMESPACES += \
     $(PRIZE_PATH)
 
-# Inherit from the proprietary version
-$(call inherit-product, vendor/prize/camera/camera-vendor.mk)
-
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     PriCamera
@@ -24,3 +21,12 @@ PRODUCT_COPY_FILES += \
 # Sysconfig
 PRODUCT_COPY_FILES += \
     $(PRIZE_PATH)/configs/pricamera-hiddenapi-package-allowlist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/pricamera-hiddenapi-package-allowlist.xml
+
+# Properties
+TARGET_SYSTEM_EXT_PROP += $(PRIZE_PATH)/system_ext.prop
+
+# Inherit from the proprietary version
+$(call inherit-product, vendor/prize/camera/camera-vendor.mk)
+
+# Sepolicy
+$(PRIZE_PATH)/configs/sepolicy.mk
