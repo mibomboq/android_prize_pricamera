@@ -22,6 +22,10 @@ system_ext/lib64/libtensorflowlite.so;MODULE_SUFFIX=_system_ext|1a45c4100787a62a
 system_ext/lib64/libtensorflowlite24.so|0e57a091ee588b3efd0d5de21fb08c1029a4eed3
 system_ext/lib64/libloadfilter.so|62596699c6de33fcb1ad80949de6c7c29239bb2d
 
+# VTservice
+system_ext/etc/init/init.vtservice.rc|50a2249906edc06059b443513db47a2ddc0490dc
+system_ext/bin/vtservice|21e520f34b4c8907272e5844be05718dd6e7db1a
+
 # MSMA
 system_ext/lib64/libimsma_adapt.so|3c1d51f2203b86c11a0123454986ec41b37e426a
 system_ext/lib64/libimsma_rtp.so|0c6929d666388f1fe4a6077d4c1583a56a9fbeec
