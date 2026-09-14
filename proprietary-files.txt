@@ -22,6 +22,22 @@ system_ext/lib64/libtensorflowlite.so;MODULE_SUFFIX=_system_ext|1a45c4100787a62a
 system_ext/lib64/libtensorflowlite24.so|0e57a091ee588b3efd0d5de21fb08c1029a4eed3
 system_ext/lib64/libloadfilter.so|62596699c6de33fcb1ad80949de6c7c29239bb2d
 
+# MSMA
+system_ext/lib64/libimsma_adapt.so
+system_ext/lib64/libimsma_rtp.so
+system_ext/lib64/libimsma.so
+system_ext/lib64/libimsma_socketwrapper.so
+system_ext/lib64/libmtk_vt_service.so
+system_ext/lib64/libmtk_vt_wrapper.so
+system_ext/lib64/libpowerstatshaldataprovider.so
+system_ext/lib64/libsignal.so
+system_ext/lib64/libsink-mtk.so
+system_ext/lib64/libsource.so
+system_ext/lib64/libvcodec_capenc.so
+system_ext/lib64/libvcodec_cap.so
+system_ext/lib64/libvt_avsync.so
+system_ext/lib64/libcomutils.so
+
 # Config
 system_ext/etc/bst_stick.cfg|f251e0ec0ae3d39375a7a2f53d6373d4140af28c
 system_ext/etc/bstai_aidoc|93ed89d8392c91501fa716527c80a0f1f06e90c8
