@@ -22,6 +22,7 @@ from extract_utils.main import (
 namespace_imports = [
     'device/prize/camera',
     'vendor/prize/camera',
+    'vendor/advan/X1',
 ]
 
 def lib_fixup_system_ext_suffix(lib: str, partition: str, *args, **kwargs):

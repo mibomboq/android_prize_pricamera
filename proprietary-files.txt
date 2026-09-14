@@ -1,7 +1,7 @@
 # ADVAN_X1-user 14 UP1A.231005.007 1751478751 release-keys
 
 # Pricam
-system_ext/app/PriCamera/PriCamera.apk;OVERRIDES=Aperture|a4adc80b9bfa4de2d26f49c0ba45c7677ef0a554
+system_ext/priv-app/PriCamera/PriCamera.apk;OVERRIDES=Aperture|323de2f0c2736ea25f7c1824f2936b653e8fca16
 
 # Libs Camera
 system_ext/lib64/libBSTBeautyAPK.so|fc88808ef85f35f29f0f47b8c9eda872569d6b02
@@ -13,13 +13,14 @@ system_ext/lib64/libBstStick2D.so|d069a358c3ee916d2d96549a1bae6c9e9749f2a5
 system_ext/lib64/libc++_shared.so|440763d84ceed2e21bcd86177d62bcbc55a0ad38
 system_ext/lib64/libjniBstAiDoc.so|103be8be6ab26323de06fc5cb5f34b71ef3a7b07
 system_ext/lib64/libjniBstSticker.so|440f1116462e9c4c281b5e889096674034946e91
-system_ext/lib64/libjni_bstbeauty.so|97d2e5eab09ad3370108ee5c1e5c1513c0740214
-system_ext/lib64/libjni_bstfilter.so|045d6e8ba99474da8636da87ad4200a01a0a3053
+system_ext/lib64/libjni_bstbeauty.so|7baaaa52ee2af33fd6c23ea118dce43c03df9b01
+system_ext/lib64/libjni_bstfilter.so|d2df66dae1278066c8242ea9f690872ff032d52f
 system_ext/lib64/libopencv_java4.so|42dcbeaa3b8f23cbdd5d45eb43b74066da4e062c
 system_ext/lib64/libjni_bstportrait.so|9dd29266e9a75416ad366511cf52857d0f90335e
 system_ext/lib64/libjni_uvpanorama.so|2b548ee21f1df1b1172c09007942752c2b9e3be2
 system_ext/lib64/libtensorflowlite.so;MODULE_SUFFIX=_system_ext|1a45c4100787a62ace8cdbdb864009e7756dd0f4
 system_ext/lib64/libtensorflowlite24.so|0e57a091ee588b3efd0d5de21fb08c1029a4eed3
+system_ext/lib64/libloadfilter.so|62596699c6de33fcb1ad80949de6c7c29239bb2d
 
 # Config
 system_ext/etc/bst_stick.cfg|f251e0ec0ae3d39375a7a2f53d6373d4140af28c
@@ -30,10 +31,6 @@ vendor/etc/hdr.cfg|68049e7a8a2075d213736bf5c33da2da2019c341
 vendor/etc/user_front.cfg|7ddf0c4a87d3afece239c27f97da2bd4a4e2717d
 vendor/etc/user_main.cfg|e794d30d157f70e4b6ee049db25b3a6e0d133676
 vendor/etc/user_wide.cfg|e794d30d157f70e4b6ee049db25b3a6e0d133676
-
-# Sensor
-vendor/lib64/s5k2lqsx_mipi_raw_IdxMgr.so|dee596a12fffebb581cd0f068eb49f9425eff242
-vendor/lib64/s5k4h7_mipi_raw_IdxMgr.so|4a34fd542a4475a644ad4e5c92f842275342e056
 
 # Sricker
 system/media/sticker/expressionsticker_01_cat/cat/cat.txt|25c7179b2f312c6f57f1a16c6df2dc95d712f0da
@@ -1580,16 +1577,3 @@ system/media/sticker/frame_15/birthday/bottom/bottom_000.png|1625d19847f5577d0b9
 system/media/sticker/frame_15/birthday/top/top_000.png|28e476b48479af344416ed6899084bcdda61a820
 system/media/sticker/frame_15/icon.png|a69baa603ef8505ea8b4fccaef26530a6607feb5
 system/media/sticker/frame_15/setting.txt|e1fdd6e6d8518d45e78ad240cb6244ea909ae88d
-# Rendering Camera
-system_ext/lib64/libMiraVision_jni.so|6a0f153ff5f67b48189c20cc46ebafc8cd881b3e
-system_ext/lib64/libloadfilter.so|82a3558072fe30a0a707f1eb1294004b5254ed79
-system_ext/lib64/libcomposer_ext.so;MODULE_SUFFIX=_system_ext|9d5b9d4f19cf4cb073a0c3d88ef3a7e0db8e276d
-system_ext/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so|ca61ac7009888a5fce033767a6fb87282cf051f0
-system_ext/lib64/vendor.mediatek.hardware.composer_ext@1.0.so|348136e0a3b5e584f0fc919ff9996847035237e1
-
-# PQ
-system_ext/lib64/vendor.mediatek.hardware.pq@2.0.so;MODULE_SUFFIX=_system_ext|8d38b8c9d60035d0be1175394ae6f2fdd2ef6b57
-system_ext/lib64/vendor.mediatek.hardware.pq@2.1.so;MODULE_SUFFIX=_system_ext|e9e7181010743c10fdc557b0197002bfa85db36c
-system_ext/lib64/vendor.mediatek.hardware.pq@2.2.so;MODULE_SUFFIX=_system_ext|5aa00411fbf0929746dd92fde73666138775ba72
-system_ext/lib64/vendor.mediatek.hardware.pq@2.3.so;MODULE_SUFFIX=_system_ext|8730c49a8106f6c06afdfd65abd60bf97fa7ce93
-system_ext/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so|92628fcdb5753e0a4fd7ddf4e569c0ff93995800
