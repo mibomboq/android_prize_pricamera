@@ -22,6 +22,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(PRIZE_PATH)/configs/pricamera-hiddenapi-package-allowlist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/pricamera-hiddenapi-package-allowlist.xml
 
+# Enable seamless_transitions aconfig flag
+PRODUCT_RELEASE_CONFIG_OVERRIDES += \
+    com.android.internal.camera.flags.seamless_transitions=true
+
 # Properties
 TARGET_SYSTEM_EXT_PROP += $(PRIZE_PATH)/system_ext.prop
 
