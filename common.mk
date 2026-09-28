@@ -32,5 +32,8 @@ TARGET_SYSTEM_EXT_PROP += $(PRIZE_PATH)/system_ext.prop
 # Inherit from the proprietary version
 $(call inherit-product, vendor/prize/camera/camera-vendor.mk)
 
+PRODUCT_PACKAGES += \
+    pri_water
+
 # Sepolicy
 include $(PRIZE_PATH)/configs/sepolicy.mk
