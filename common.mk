@@ -14,6 +14,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     PriCamera
 
+# Enable seamless_transitions aconfig flag
+PRODUCT_RELEASE_CONFIG_OVERRIDES += \
+    com.android.internal.camera.flags.seamless_transitions=true
+
 # Priv-app permission
 PRODUCT_COPY_FILES += \
     $(PRIZE_PATH)/configs/privapp-permissions-pricamera.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-pricamera.xml
