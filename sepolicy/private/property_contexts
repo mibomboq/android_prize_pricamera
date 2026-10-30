@@ -162,6 +162,3 @@ vendor.debug.appcontrol.name             u:object_r:system_odm_camera_prop:s0
 ro.odm.updatesetting.subscreen           u:object_r:system_odm_camera_prop:s0
 ro.odm.underwater_camera_mode            u:object_r:system_odm_camera_prop:s0
 ro.odm.camera.closemodebyback            u:object_r:system_odm_camera_prop:s0
-jpeg.exif.icc.profile                    u:object_r:system_odm_camera_prop:s0
-ro.mediatek.platform                     u:object_r:system_odm_camera_prop:s0
-ro.hardware.chipname                     u:object_r:system_odm_camera_prop:s0
