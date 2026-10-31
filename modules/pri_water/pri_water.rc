@@ -1,6 +1,6 @@
 on post-fs-data
     mkdir /data/vendor/.water 02777 system camera
-    restorecon /data/vendor/.water
+    restorecon_recursive /data/vendor/.water
 
 service pri_water /vendor/bin/pri_water
     class late_start
