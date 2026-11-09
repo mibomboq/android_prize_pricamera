@@ -7,3 +7,6 @@ hal_client_domain(platform_app_36, hal_mtk_bgs);
 
 allow platform_app_36 mtk_water_data_file:dir { search write add_name };
 allow platform_app_36 mtk_water_data_file:file { create write open getattr };
+
+# BGService (HIDL double-check)
+allow platform_app hal_camera_service:service_manager find;
