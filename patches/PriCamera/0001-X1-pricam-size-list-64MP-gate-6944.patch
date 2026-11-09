@@ -1,0 +1,64 @@
+--- a/smali/com/mediatek/camera/feature/setting/picturesize/PictureSizeCaptureRequestConfig.smali
++++ b/smali/com/mediatek/camera/feature/setting/picturesize/PictureSizeCaptureRequestConfig.smali
+@@ -261,6 +261,59 @@
+     goto :goto_2
+ 
+     :cond_6
++    invoke-interface {p0}, Ljava/util/List;->size()I
++
++    move-result v1
++
++    const/4 v2, 0x0
++
++    const/4 v3, 0x0
++
++    :max_loop
++    if-ge v2, v1, :max_done
++
++    invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
++
++    move-result-object v4
++
++    check-cast v4, Landroid/util/Size;
++
++    invoke-virtual {v4}, Landroid/util/Size;->getWidth()I
++
++    move-result v4
++
++    if-le v4, v3, :max_next
++
++    move v3, v4
++
++    :max_next
++    add-int/lit8 v2, v2, 0x1
++
++    goto :max_loop
++
++    :max_done
++    const/16 v4, 0x1200
++
++    if-lt v3, v4, :skip_64mp
++
++    new-instance v0, Landroid/util/Size;
++
++    const/16 v6, 0x2400
++
++    const/16 v7, 0x1b20
++
++    invoke-direct {v0, v6, v7}, Landroid/util/Size;-><init>(II)V
++
++    invoke-interface {p0, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
++
++    :skip_64mp
+     return-object p0
+ .end method
+ 
+@@ -584,8 +637,6 @@
+ 
+     move-result v1
+ 
+-    if-gt v3, v1, :cond_0
+-
+     .line 93
+     iget-object v0, p0, Lcom/mediatek/camera/feature/setting/picturesize/PictureSizeCaptureRequestConfig;->mPictureSize:Lcom/mediatek/camera/feature/setting/picturesize/PictureSize;
+ 

@@ -1,7 +1,7 @@
 # ADVAN_X1-user 14 UP1A.231005.007 1751478751 release-keys
 
 # Pricam
-system_ext/priv-app/PriCamera/PriCamera.apk;OVERRIDES=Aperture|323de2f0c2736ea25f7c1824f2936b653e8fca16
+system_ext/app/PriCamera/PriCamera.apk:system_ext/priv-app/PriCamera/PriCamera.apk;OVERRIDES=Aperture|a4adc80b9bfa4de2d26f49c0ba45c7677ef0a554
 
 # Libs Camera
 system_ext/lib64/libBSTBeautyAPK.so|fc88808ef85f35f29f0f47b8c9eda872569d6b02

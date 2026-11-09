@@ -36,10 +36,15 @@ lib_fixups: lib_fixups_user_type = {
 
 }  # fmt: skip
 
+blob_fixups: blob_fixups_user_type = {
+    'system_ext/priv-app/PriCamera/PriCamera.apk': blob_fixup()
+        .apktool_patch('patches/PriCamera'),
+}  # fmt: skip
+
 module = ExtractUtilsModule(
     'camera',
     'prize',
-#    blob_fixups=blob_fixups,
+    blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
 )
